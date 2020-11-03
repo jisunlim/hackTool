@@ -1,11 +1,9 @@
 dirPath=`pwd`
 basename=`basename $dirPath`
-
-# adb 연결
-adb connect 127.0.0.1:62001
+adb=./adb
 
 # 기존 앱 제거
-adb uninstall $basename
+$adb uninstall $basename
 
 # 리패키징
 apktool b base -o new.apk
@@ -26,4 +24,4 @@ NowDate="$(date +%Y%m%d)-$(date +%H%M)"
 ~/Library/Android/sdk/build-tools/28.0.3/zipalign -v 4 new.apk base-$NowDate.apk
 
 # 설치
-adb install -r base-$NowDate.apk
+$adb install -r base-$NowDate.apk

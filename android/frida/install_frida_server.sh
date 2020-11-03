@@ -1,6 +1,6 @@
 # adb connect 127.0.0.1:62001
 
-adb=~/dev/platform-tools/adb
+adb=../tools/adb
 
 cpu=`$adb shell getprop ro.product.cpu.abi`
 

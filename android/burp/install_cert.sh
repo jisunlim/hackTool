@@ -1,7 +1,7 @@
 # openssl x509 -inform DER -in cacert.der -out cacert.pem
 # openssl x509 -inform PEM -subject_hash_old -in cacert.pem
 
-adb=~/dev/platform-tools/adb
+adb=../tools/adb
 
 $adb push ./cacert.pem /sdcard
 $adb shell mv /sdcard/cacert.pem /system/etc/security/cacerts/9a5ba575.0

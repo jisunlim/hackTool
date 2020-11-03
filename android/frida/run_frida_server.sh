@@ -1,3 +1,3 @@
-adb=~/dev/platform-tools/adb
+adb=../tools/adb
 
 $adb shell /data/local/tmp/frida-server &
