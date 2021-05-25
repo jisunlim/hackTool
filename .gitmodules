@@ -1,6 +1,0 @@
-[submodule "android/android/tools/fridump"]
-	path = android/android/tools/fridump
-	url = https://github.com/jisunlim/hackTool.git
-[submodule "android/fridump"]
-	path = android/fridump
-	url = https://github.com/rootbsd/fridump3.git
